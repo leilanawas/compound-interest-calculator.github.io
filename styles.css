@@ -1,0 +1,159 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: pink;
+}
+
+h1 {
+  font-size: 50px;
+  font-family: "Nerko One";
+  color: white;
+  background-image: linear-gradient(
+    rgb(231, 137, 137),
+    rgb(241, 199, 120),
+    rgb(233, 233, 110),
+    rgb(245, 169, 245)
+  );
+  text-align: center;
+  margin: 10px;
+  padding: 35px;
+  border: 5px solid white;
+  text-shadow: 2px 3px 2px black;
+  animation: drop 1s linear;
+}
+
+h2,
+label,
+section {
+  font-family: "Nerko One";
+  color: white;
+  text-shadow: 1px 1px 1px black;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+label {
+  font-size: 20px;
+}
+
+main {
+  margin: 20px;
+  font-size: 14px;
+  background-color: lightsalmon;
+  text-align: center;
+  padding: 20px;
+  border: solid 5px rgb(255, 245, 138);
+  height: auto;
+}
+
+article {
+  padding: 20px;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border: dotted 5px white;
+}
+
+article label {
+  margin-bottom: 5px;
+}
+
+article input,
+article select {
+  padding: 20px;
+  margin: 5px 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+article button {
+  padding: 20px;
+  margin: 5px 0;
+  align-self: center;
+  width: 50%;
+  box-sizing: border-box;
+  background-color: pink;
+}
+
+article progress {
+  width: 100%;
+  margin: 10px 0;
+}
+
+select,
+span,
+input,
+button,
+output {
+  font-family: "Nerko One";
+  font-size: 20px;
+  color: black;
+}
+
+aside {
+  margin: 10px;
+  height: auto;
+  align-items: center;
+  animation: slide 1s linear;
+}
+
+aside img {
+  width: 100%;
+  height: auto;
+  border: solid 5px lightpink;
+}
+
+section {
+  padding: 30px;
+  margin: 0px 10px 30px 20px;
+  font-size: 30px;
+  border: solid 5px white;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  font-family: "Nerko One";
+}
+
+@media (min-width: 768px) {
+  main {
+    display: flex;
+    justify-content: Normal;
+    align-items: flex-start;
+  }
+}
+
+@keyframes slide {
+  0% {
+    transform: translate(400px, 0);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+
+@keyframes drop {
+  0% {
+    transform: translate(0, -250px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+h1:hover {
+  background-image: linear-gradient(
+    rgb(245, 169, 245),
+    rgb(233, 233, 110),
+    rgb(241, 199, 120),
+    rgb(231, 137, 137)
+  );
+}

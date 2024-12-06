@@ -1,0 +1,15 @@
+{
+  "name": "Compound Interest Calculator",
+  "version": "1.0.0",
+  "description": "A compound interest calculator",
+  "main": "index.html",
+  "scripts": {
+    "start": "serve"
+  },
+  "keywords": ["html", "css"],
+  "author": "Leila Nawas",
+  "license": "MIT",
+  "devDependencies": {
+    "serve": "11.2.0"
+  }
+}
